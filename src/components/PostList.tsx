@@ -60,7 +60,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
 };
 
 export const PostList: React.FC<{ items: PostItem[] }> = (props) => {
-  const [displayItemsCount, setDisplayItemsCount] = useState<number>(32);
+  const [displayItemsCount, setDisplayItemsCount] = useState<number>(8);
   const totalItemsCount = props.items?.length || 0;
   const canLoadMore = totalItemsCount - displayItemsCount > 0;
 
