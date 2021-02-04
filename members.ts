@@ -35,7 +35,7 @@ export const members: Member[] = [
     avatarSrc: "/avatars/nyuta.jpeg",
     twitterUsername: "",
     githubUsername: "nyuta01",
-    sources: []
+    sources: ["https://nyuta01.github.io/feed"]
   },
   {
     name: "Kazuhiko Sakaguchi",
