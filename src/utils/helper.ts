@@ -9,8 +9,12 @@ export function getMemberPostsByName(name: string) {
   return (posts as PostItem[]).filter((item) => item.authorName === name);
 }
 export function getHostFromURL(str: string) {
-  const url = new URL(str);
-  return url?.hostname || "blog";
+  try {
+    const url = new URL(str);
+    return url?.hostname || "blog";
+  } catch {
+    return "nyuta01.github.io";
+  }
 }
 export function getFaviconSrcFromHostname(hostname: string) {
   return `https://www.google.com/s2/favicons?domain=${hostname}`;
