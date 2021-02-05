@@ -1,0 +1,13 @@
+name: Deploy production site
+
+on:
+  schedule:
+    - cron:  '30 11 * * *'
+
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build hock
+        run: |
+          curl -X POST -d {} https://api.netlify.com/build_hooks/601d4b4449428ce098601289
