@@ -13,6 +13,13 @@ import {
 
 dayjs.extend(relativeTime);
 
+const generateLink = (hostname: string, link: string) => {
+  if (hostname === "nyuta01.github.io") {
+    return `https://${hostname+link}`
+  }
+  return link;
+}
+
 const PostLink: React.FC<{ item: PostItem }> = (props) => {
   const { authorName, title, isoDate, link, dateMiliSeconds } = props.item;
   const member = getMemberByName(authorName);
@@ -38,7 +45,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
           </div>
         </a>
       </Link>
-      <a href={link} className="post-link__main-link">
+      <a href={generateLink(hostname, link)} className="post-link__main-link">
         <h2 className="post-link__title">{title}</h2>
         {hostname && (
           <div className="post-link__site">
