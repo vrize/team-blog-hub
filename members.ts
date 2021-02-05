@@ -6,7 +6,6 @@ export const members: Member[] = [
     role: "CEO",
     bio: "",
     avatarSrc: "/avatars/shoda.png",
-    twitterUsername: "",
     githubUsername: "syouda",
     sources: ["https://note.com/syouda/rss"]
   },
@@ -15,7 +14,6 @@ export const members: Member[] = [
     role: "CTO",
     bio: "",
     avatarSrc: "/avatars/tsuyuki.png",
-    twitterUsername: "",
     githubUsername: "htsh-tsyk",
     sources: []
   },
@@ -24,16 +22,14 @@ export const members: Member[] = [
     role: "",
     bio: "",
     avatarSrc: "/avatars/kameda.jpeg",
-    twitterUsername: "",
     githubUsername: "kmd09",
-    sources: []
+    sources: ["https://zenn.dev/kmd_09/feed"]
   },
   {
     name: "Yuta Nishimori",
     role: "",
     bio: "",
     avatarSrc: "/avatars/nyuta.jpeg",
-    twitterUsername: "",
     githubUsername: "nyuta01",
     sources: ["https://nyuta01.github.io/feed"]
   },
@@ -42,7 +38,6 @@ export const members: Member[] = [
     role: "",
     bio: "",
     avatarSrc: "/avatars/ponta.jpg",
-    twitterUsername: "",
     githubUsername: "deathponta",
     sources: []  
   },
@@ -51,7 +46,6 @@ export const members: Member[] = [
     role: "",
     bio: "",
     avatarSrc: "/avatars/yokishava.jpeg",
-    twitterUsername: "yokishava",
     githubUsername: "yokishava",
     sources: ["https://jksdaba.hatenablog.com/rss"]
   }
