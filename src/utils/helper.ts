@@ -12,8 +12,8 @@ export function getHostFromURL(str: string) {
   try {
     const url = new URL(str);
     return url?.hostname || "blog";
-  } catch {
-    return "nyuta01.github.io";
+  } catch (_) {
+    return "";
   }
 }
 export function getFaviconSrcFromHostname(hostname: string) {
